@@ -1,0 +1,5 @@
+name: ActionBar
+version: 1.0
+author: [Paddy_Wagon]
+main: me.patrick.actionbar.Utilities
+depend: [PlotSquared]
