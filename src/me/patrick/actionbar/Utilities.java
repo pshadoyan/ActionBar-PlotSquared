@@ -49,12 +49,9 @@ public class Utilities extends JavaPlugin implements Listener
         Set<UUID> uuid = plot.getOwners();
         UUID firstuuid = uuid.iterator().next();
 
-        if (event.getPlayer().isOnline())
-        {
-            return ChatColor.GREEN + "Owned by " + ChatColor.GRAY + Bukkit.getPlayer(firstuuid).getName();
-        } else {
-            return ChatColor.GREEN + "Owned by " + ChatColor.GRAY + Bukkit.getOfflinePlayer(firstuuid).getName();
-        }
+        String player_name = Bukkit.getOfflinePlayer(firstuuid).getName();
+
+            return ChatColor.GREEN + "Owned by " + ChatColor.GRAY + player_name;
     }
 
     public static void sendActionbar(Player p, String message) {
